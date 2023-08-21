@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eddc7682d7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo2.png">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#portofolio">Portofolio</a></li>
+                   <li><a href="#contact">Contacts</a></li>
+                   <i class="fa-solid fa-xmark" onclick='closemenu()'></i>
+                </ul>
+                <i class="fa-solid padding-top25 fa-bars" onclick='openmenu()'></i>
+            </nav>
+            <div class="header-text">
+                <p>Full stack developer</p>
+                <h1>Hi, I'm <span>Amine</span> <br/>Lhayni from Morocco</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myimages/2ndphoto.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Hello! I'm a 21-year-old software developer based in Morocco, specializing in web development and desktop applications. With expertise in HTML, CSS, JavaScript, C#, and PHP, I am passionate about crafting innovative solutions that enhance user experiences. I also excel in database management, ensuring efficient data organization and retrieval. My dedication to staying up-to-date with the latest technologies enables me to deliver high-quality, robust software solutions. As a detail-oriented professional, I thrive in collaborative environments, leveraging my strong problem-solving skills to overcome challenges and deliver exceptional results.</p>
+
+                       <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                           <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                           <p class="tab-links" onclick="opentab('education')">Educaion</p>
+                       </div>
+                       <div class="tab-content active-tab" id="skills">
+                           <ul>
+                               <li><span>UI</span><br/> Designing Web/App Interfaces</li>
+                               <li><span>Web Development</span><br/> Web/App development</li>
+                               <li><span>App development</span><br/> Building Desktop Apps</li>
+                           </ul>
+                       </div>
+                       <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2021</span><br/>training as a software developer and assistant</li>
+                            <li><span>2022</span><br/>training as a web and apps developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2019</span><br/>Bachelor of Science in Physics and Chemistry</li>
+                            <li><span>2021</span><br/>Computer development specialized technician</li>
+                            <li><span>2022</span><br/>German course with B1 level qualification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-------------services------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>
+                            I'm a skilled web developer experienced in HTML, CSS, and JavaScript for frontend design, as well as PHP, MySQL, C#, and SQL Server for backend development using Visual Studio. With a focus on delivering seamless user experiences, I create visually appealing websites that are both functional and aesthetically pleasing. I'm dedicated to providing high-quality solutions that meet client requirements and exceed expectations.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Apps Development</h2>
+                        <p>I'm a desktop applications developer focused on C# development using Visual Studio. With expertise in designing intuitive user interfaces and implementing robust functionality, I create reliable and user-friendly desktop applications. My dedication to delivering high-quality software solutions ensures that clients receive a seamless user experience tailored to their needs.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Management</h2>
+                        <p>
+                            I am a skilled SQL Server database manager, proficient in organizing and securing data. With expertise in database design, optimization, and integrity, I ensure smooth data management operations. Leveraging the powerful features of SQL Server, I facilitate accurate and efficient data retrieval and manipulation. My dedication to data reliability and security enables businesses to make informed decisions based on well-structured information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------portofolio---------->
+        <div id="portofolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img height="200px" src="images/bg2.JPG" alt="">
+                        <div class="layer">
+                            <h3>Website</h3>
+                            <p>Online coaching for fitness, presenting all kinds of exercises for each muscle</p>
+                            <a target="_blank" href="https://gym-amine-lhayni.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img height="200px" src="images/projet 2.JPG" alt="">
+                        <div class="layer">
+                            <h3>Website</h3>
+                            <p>Restaurant Website:  crafted solely with ReactJs, designed to represent my restaurant.</p>
+                            <a target="_blank"  href="https://restaurant-gericht-ragnar.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img height="200px" src="images/Project 1.JPG" alt="">
+                        <div class="layer">
+                            <h3>Website</h3>
+                            <p>presenting a sleek portfolio website template showcasing the talents using only HTML and CSS.</p>
+                            <a target="_blank" href="https://aminelhayni.github.io/template-1/"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <a  class="btn">See more</a>
+            </div>
+        </div>
+
+        <!------------contact----------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> amine02.lhayni@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 06 14 80 36 58</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/amine-lhayni-666aa4213/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/_.aminex_/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/LHamine_"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <a href="my cv.pdf" class="btn btn2" download="">Download CV!</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="https://formsubmit.co/amine02.lhayni@gmail.com" method="POST">
+                        <input type="text" id="name" name="Name" placeholder="Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" id="submit" class="btn btn2">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Created by LHragnar (Amine Lhayni)  <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+   
+    
+</body>
+</html>
